@@ -334,8 +334,7 @@ client.on("message", message => {
 client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
-     .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=484098782158651392&permissions=8&scope=bot')
+     .setTitle('RED Army .!')
   .setDescription(`**
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
@@ -345,10 +344,9 @@ client.channels.get("406877114936197120").sendEmbed(embed)
 client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
-     .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=484098782158651392&permissions=8&scope=bot')
+     .setTitle('Red Army .!')
   .setDescription(`**
-  Server Kicked Legend System :cry:
+  Server Kicked Red Ary :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("406877114936197120").sendEmbed(embed)
@@ -573,7 +571,7 @@ client.user.setAvatar(argresult);
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
       } else     
 if (message.content.startsWith(adminprefix + 'setT')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/idk");
+  client.user.setGame(argresult, "https://www.twitch.tv/RA");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
 });
@@ -2148,7 +2146,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("349616310734553088","335027415619338240").send(
+client.users.get("446390393479757825","404668030766022695").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -2160,7 +2158,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By ITz1uKY")
+     .setFooter("By Oscar")
                                                 
 
 message.channel.send(embed);
@@ -3136,7 +3134,7 @@ const lol = JSON.parse(fs.readFileSync("lol.json", "utf8"))
 function hi (message, args){
     var embed = new Discord.RichEmbed()
     .setAuthor(client.user.username , client.user.avatarURL)
-    .setFooter("All copyrights reseaved. | 2018©")
+    .setFooter("All copyrights reseaved. | 2019©")
     .setColor("RANDOM")
     .setDescription(args)
     .setThumbnail(client.user.avatarURL);
