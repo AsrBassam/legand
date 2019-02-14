@@ -412,7 +412,7 @@ client.on('message', async msg => {
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 
-					.setFooter("LegendSystem")
+					.setFooter("Red-ArmySystem")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					try {
@@ -910,7 +910,7 @@ client.on('message', message => {
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``INFO LegendSystem`` ')
+            .setTitle('``INFO Red-ArmySystem`` ')
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
             .addField('``servers``', [client.guilds.size], true)
@@ -2318,7 +2318,7 @@ client.on('message', message => {
         .setTitle('Click Here')
         .setURL(`${omar.avatarURL}`)
         .setImage(`${omar.avatarURL}`)
-        .setFooter('Legend System.',client.user.avatarURL) 
+        .setFooter('Red-Army System.',client.user.avatarURL) 
       message.channel.sendEmbed(embed);
     }
 });
@@ -3100,7 +3100,7 @@ let embed = new Discord.RichEmbed()
                 
                                  .addField('شكرا لدخولك سيرفر', `${member.guild.name}`,true)
                                    
- .setFooter("LegendSystem")
+ .setFooter("Red-ArmySystem")
     .setTimestamp()
 
   channel.sendEmbed(embed);
@@ -3148,7 +3148,7 @@ member.addRole(member.guild.roles.find('name', 'Member'));
         .setTitle('❌ | تمت معاقبتك')
         .setAuthor(message.author.username, message.author.avatarURL)
         .addField(`** لقد قمت بمخالفة قوانين السيرفر من خلال نشر روابط اضافة الى سيرفرات اخرى  **` , `**ملاحظة  : إن كآن هذآ الاسكات عن طريق الخطأ الرجاء التوجه والتكلم مع الادآرة**`)
-        .addField(`by`,`LegendSystem. `)
+        .addField(`by`,`Red-ArmySystem. `)
         .setColor('RED')
         .setThumbnail(message.author.avatarURL)
         .setFooter(`${message.guild.name} Server`, message.guild.iconURL)
