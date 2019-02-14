@@ -1490,14 +1490,6 @@ msg.channel.send(embed).then(() => {
 });
 
 
-client.on("ready", async() => {
-    client.user.setGame("Red-Army");
-console.log(`Back Online In ${client.guilds.size} Servers!`);  
-    setTimeout(() => {
-        client.user.setActivity(`Red Army!! | ALL`, {type: "WATCHING"});
-    }, 3000);
-});
-
 
 
 client.on('message', message => {
