@@ -3253,9 +3253,6 @@ client.on('guildMemberAdd', member => {
 
 
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` Red Army | RED ARMY System ✨ `,"https://www.twitch.tv/R-A")
 
 
 
