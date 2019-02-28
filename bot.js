@@ -181,8 +181,8 @@ client.on('message', msg => {
 
 
 client.on("message", message => {
-	var prefix = "=";
- if (message.content === "=help") {
+	var prefix = "~";
+ if (message.content === "~help") {
   const embed = new Discord.RichEmbed()  
       .setColor("#000000") 
       .setDescription(`
@@ -204,42 +204,41 @@ ${prefix}clan لعرض اوامر الكلانات
   
 
 client.on("message", message => {
-	var prefix = "=";
- if (message.content === "=help public") {
+	var prefix = "~";
+ if (message.content === "~help public") {
 	 message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
 			  اوامر عامة
-❖=allbots ~ لعرض جميع البوتات الي بالسيرفر
-❖=server ~يعرض لك معلومات عن السيرفر
-❖=bot ~ يعرض لك كل معلومات البوت
-❖=skin <name> ~ يعرض لك سكنك بماين كرافت
-❖=count ~ يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
-❖=invites ~ يعرض لك  عدد انفايتاتك بالسيرفر 
-❖=invite-codes ~ يعرض لك روابط الانفايتات حكك في السيرفر 
-❖=cal ~ اله حاسبة
-❖=trans <language> <any thing> ~ يترجم لك الي تبيه من اي لغة
-❖=short ~ يختصر لك رابط كبير الى رابط صغير
-❖=tag ~ يكتب لك الكلمة بشكل جميل وكبير
-❖=google ~ للبحث في قوقل عن طريق الدسكورد
-❖=perms ~ يعرض لك برمشناتك بالسيرفر
-❖=za5 ~ يزخرف لك كلمة او جملة
-❖=rooms ~ يعرض لك كل الرومات الي بالسيرفر مع عددها
-❖=roles ~ يعرض لك كل الرانكات بالسيرفر بشكل جميل
-❖=emojilist ~ يعرض لك كل الايموجيات الي بالسيرفر
-❖=say ~ يكرر الكلام الي تكتبو
-❖=image ~ صورة السيرفر
-❖=members ~ يعرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
-❖=id ~ معلومات عنك
-❖=bans ~ عدد الاشخاص المبندة 
-❖=avatar ~ صورتك او صورة الي تمنشنو
-❖=embed ~ يكرر الي تقولو بشكل حلو
-❖=emoji <any things> ~ لتحويل اي كلمه تقولها الي ايموجي
-❖=inv ~ لدعوة البوت الى سيرفرك
-❖=support ~ سيرفر الدعم
-❖=contact ~ ارسال اقتراح او لمراسلة صاحب البوت
-❖=topinv لعرض اكثر الاعضاء الذين يدعون
+❖~allbots ~ لعرض جميع البوتات الي بالسيرفر
+❖~server ~يعرض لك معلومات عن السيرفر
+❖~bot ~ يعرض لك كل معلومات البوت
+❖~skin <name> ~ يعرض لك سكنك بماين كرافت
+❖~count ~ يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
+❖~invites ~ يعرض لك  عدد انفايتاتك بالسيرفر 
+❖~invite-codes ~ يعرض لك روابط الانفايتات حكك في السيرفر 
+❖~cal ~ اله حاسبة
+❖~trans <language> <any thing> ~ يترجم لك الي تبيه من اي لغة
+❖~short ~ يختصر لك رابط كبير الى رابط صغير
+❖~tag ~ يكتب لك الكلمة بشكل جميل وكبير
+❖~google ~ للبحث في قوقل عن طريق الدسكورد
+❖~perms ~ يعرض لك برمشناتك بالسيرفر
+❖~za5 ~ يزخرف لك كلمة او جملة
+❖~rooms ~ يعرض لك كل الرومات الي بالسيرفر مع عددها
+❖~roles ~ يعرض لك كل الرانكات بالسيرفر بشكل جميل
+❖~emojilist ~ يعرض لك كل الايموجيات الي بالسيرفر
+❖~say ~ يكرر الكلام الي تكتبو
+❖~image ~ صورة السيرفر
+❖~members ~ يعرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
+❖~id ~ معلومات عنك
+❖~bans ~ عدد الاشخاص المبندة 
+❖~avatar ~ صورتك او صورة الي تمنشنو
+❖~embed ~ يكرر الي تقولو بشكل حلو
+❖~emoji <any things> ~ لتحويل اي كلمه تقولها الي ايموجي
+❖~inv ~ لدعوة البوت الى سيرفرك
+❖~contact ~ ارسال اقتراح او لمراسلة صاحب البوت
+❖~topinv لعرض اكثر الاعضاء الذين يدعون
 
 `)
    message.author.sendEmbed(embed)
@@ -248,36 +247,36 @@ client.on("message", message => {
    }); 
    
    client.on("message", message => {
-	var prefix = "=";
- if (message.content === "=help admin") {
+	var prefix = "~";
+ if (message.content === "~help admin") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
 	      اوامر ادارة السيرفر
-❖=move @user ~  لسحب الشخص الى روومك
-❖=bc ~ رسالة جماعية الى كل اعضاء السيرفر
-❖=role @user <rank> ~ لأعطاء رتبة لعضو معين
-❖=roleremove @user <rank> ~ لازالة الرتبة من شخص معين
-❖=role all <rank> ~ لأعطاء رتبة للجميع
-❖=role humans <rank> ~ لأعطاء رتبة للاشخاص فقط
-❖=role bots <rank> ~ لأعطاء رتبة لجميع البوتات
-❖=hc ~ اخفاء الشات
-❖=sc ~ اضهار الشات المخفية
-❖=clr <numbr> ~ مسح الشات بعدد
-❖=clear ~ مسح الشات
-❖=mute @user <reason> ~ اعطاء العضو ميوت لازم رتبة <Muted>
-❖=unmute @user ~ لفك الميوت عن الشخص 
-❖=kick @user <reason> ~ طرد الشخص من السيرفر
-❖=ban @user <reason> ~ حضر الشخص من السيرفر
-❖=mutec ~ تقفيل الشات
-❖=unmutec ~ فتح الشات
-❖=SetText <name> ~ انشاء شات
-❖=setVoice <name> ~ انشاء رووم فويس
-❖=delet <name> ~ مسح الشات او الرووم فويس
-❖=ccolors <number> ~ ينشا لك الوان مع كم الوان تبي
-❖=setlogs toggle ~ علشان تفعل اللوق
-❖=VoiceOnline ~ لعرض الفويس اونلاين
+❖~move @user ~  لسحب الشخص الى روومك
+❖~bc ~ رسالة جماعية الى كل اعضاء السيرفر
+❖~role @user <rank> ~ لأعطاء رتبة لعضو معين
+❖~roleremove @user <rank> ~ لازالة الرتبة من شخص معين
+❖~role all <rank> ~ لأعطاء رتبة للجميع
+❖~role humans <rank> ~ لأعطاء رتبة للاشخاص فقط
+❖~role bots <rank> ~ لأعطاء رتبة لجميع البوتات
+❖~hc ~ اخفاء الشات
+❖~sc ~ اضهار الشات المخفية
+❖~clr <numbr> ~ مسح الشات بعدد
+❖~clear ~ مسح الشات
+❖~mute @user <reason> ~ اعطاء العضو ميوت لازم رتبة <Muted>
+❖~unmute @user ~ لفك الميوت عن الشخص 
+❖~kick @user <reason> ~ طرد الشخص من السيرفر
+❖~ban @user <reason> ~ حضر الشخص من السيرفر
+❖~mutec ~ تقفيل الشات
+❖~unmutec ~ فتح الشات
+❖~SetText <name> ~ انشاء شات
+❖~setVoice <name> ~ انشاء رووم فويس
+❖~delet <name> ~ مسح الشات او الرووم فويس
+❖~ccolors <number> ~ ينشا لك الوان مع كم الوان تبي
+❖~setlogs toggle ~ علشان تفعل اللوق
+❖~VoiceOnline ~ لعرض الفويس اونلاين
 `)
    message.author.sendEmbed(embed)
     
@@ -285,33 +284,33 @@ client.on("message", message => {
    }); 
 
    client.on("message", message => {
-	var prefix = "=";
- if (message.content === "=help games") {
+	var prefix = "~";
+ if (message.content === "~help games") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
           اوامر الالعاب
-❖=rps ~ حجر ورقة مقص
-❖=speed ~ اسرع كتابة
-❖=quas ~ اسئلة عامة
-❖=نكت ~ نكت 
-❖=لعبة فكك ~ فكك
-❖=عواصم عشوائية ~ عواصم
-❖=لعبة كت تويت ~ كت تويت
-❖=roll <number> ~ قرعة
-❖=لو خيروك بطريقة حلوة ~ لو خيروك
-❖=لعبة مريم ~ مريم
-❖=فوائد ونصائح  ~ هل تعلم
-❖=يعطيك عقابات قاسية ~ عقاب   `)
+❖~rps ~ حجر ورقة مقص
+❖~speed ~ اسرع كتابة
+❖~quas ~ اسئلة عامة
+❖=نكت ~ نكت
+❖~لعبة فكك ~ فكك
+~عواصم عشوائية ~ عواصم
+~لعبة كت تويت ~ كت تويت
+~roll <number> ~قرعة
+❖~لو خيروك بطريقة حلوة ~ لو خيروك
+❖~لعبة مريم ~ مريم
+❖~فوائد ونصائح  ~ هل تعلم
+❖~يعطيك عقابات قاسية ~ عقاب   `)
    message.author.sendEmbed(embed)
     
    }
    }); 
 			  
 client.on("message", message => {
-	var prefix = "=";
- if (message.content === "=help music") {
+	var prefix = "~";
+ if (message.content === "~help music") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
